@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1015740905157",
+    "firebase_url": "https://innovathon2018-27994.firebaseio.com",
+    "project_id": "innovathon2018-27994",
+    "storage_bucket": "innovathon2018-27994.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015740905157:android:4f343fb0830bd1ca",
+        "android_client_info": {
+          "package_name": "com.example.mati.innovathon2018"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015740905157-oo5hl281vo0psgm17kkqqnpo5bbu44mh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mati.innovathon2018",
+            "certificate_hash": "6557957dddc5f11c01bcdc636cef09d8ea119c82"
+          }
+        },
+        {
+          "client_id": "1015740905157-bcknpjf9dmphk68rrb59ttqj54rc996p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2sHKDJkk5vq3oj8DbIxP1PM44P_f5Wnk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015740905157-bcknpjf9dmphk68rrb59ttqj54rc996p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
