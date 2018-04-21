@@ -5,4 +5,37 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">428459410937154</string>
+    <string name="fb_login_protocol_scheme">fb428459410937154</string>
+
+    <string-array name="universitySpinner">
+        <item>UAM</item>
+        <item>UPP</item>
+        <item>AWF</item>
+        <item>UMP</item>
+    </string-array>
+
+    <string-array name="UAM">
+        <item>WMI</item>
+        <item>WPiA</item>
+        <item>WNPiD</item>
+    </string-array>
+
+    <string-array name="AWF">
+        <item>Fizjoterapia</item>
+        <item>Rekreacja</item>
+        <item>Sportowy</item>
+    </string-array>
+
+    <string-array name="UMP">
+        <item>Lekarski I</item>
+        <item>Lekarski II</item>
+        <item>Stomatologiczny</item>
+    </string-array>
+
+    <string-array name="UPP">
+        <item>Biologiczny</item>
+        <item>Ogrodniczny</item>
+        <item>Rolniczy</item>
+    </string-array>
 </resources>

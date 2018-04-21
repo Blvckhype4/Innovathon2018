@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.example.mati.innovathon2018.RegisterForm"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Imie i nazwisko"
+        android:layout_marginTop="@dimen/common"
+        android:layout_marginLeft="@dimen/common"/>
+
+        <EditText
+            android:id="@+id/displayNameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common"
+            android:layout_marginRight="@dimen/common"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginLeft="@dimen/common"
+            android:layout_marginTop="@dimen/common"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailEdit"
+            android:layout_marginLeft="@dimen/common"
+            android:layout_marginRight="@dimen/common"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common"
+            android:layout_marginTop="@dimen/common"
+            android:text="Uniwersytet"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/universitySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wydzial"
+            android:layout_marginLeft="@dimen/common"
+            android:layout_marginRight="@dimen/common"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/departamentSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Absolwent"
+                    android:layout_marginLeft="@dimen/common"/>
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300sp"
+            android:src="@drawable/next_24dp"
+            android:layout_marginLeft="300sp"/>
+    </LinearLayout>
+
+</LinearLayout>

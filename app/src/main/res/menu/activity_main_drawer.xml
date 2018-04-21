@@ -5,33 +5,29 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/searchGroup"
+            android:icon="@drawable/group_24dp"
+            android:title="Wyszukaj Grupe" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/createGroup"
+            android:icon="@drawable/create_24dp"
+            android:title="Utworz Grupe" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/searchProfile"
+            android:icon="@drawable/search_24dp"
+            android:title="Wyszukaj Profile" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Zarzadzanie">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/settings"
+                android:icon="@drawable/setting_24dp"
+                android:title="Ustawienia" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/signOut"
+                android:icon="@drawable/exit_24dp"
+                android:title="Wyloguj" />
         </menu>
     </item>
 
