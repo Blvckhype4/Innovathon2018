@@ -47,7 +47,7 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.MyViewHold
         holder.quantity.setText(group.getActualQuantity() + "/" + group.getMaxQuantity());
         holder.budget.setText(group.getBudget());
         holder.location.setText(group.getLocation());
-        holder.date.setText(group.getDate().toString());
+        holder.date.setText(group.getDate());
     }
 
     @Override

@@ -5,15 +5,14 @@ import java.text.SimpleDateFormat;
 
 public class Group {
     private int actualQuantity, maxQuantity, budget;
-    private String location;
-    private SimpleDateFormat date;
+    private String location, date;
 
     public Group() {
     }
 
     public Group(int actualQuantity, int maxQuantity, int budget,
-                 String location, SimpleDateFormat date) {
-        date = new SimpleDateFormat("yyyy-MM-dd HH-mm");
+                 String location, String date) {
+
         this.actualQuantity = actualQuantity;
         this.maxQuantity = maxQuantity;
         this.budget = budget;
@@ -53,11 +52,11 @@ public class Group {
         this.location = location;
     }
 
-    public SimpleDateFormat getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(SimpleDateFormat date) {
+    public void setDate(String date) {
         this.date = date;
     }
 }
