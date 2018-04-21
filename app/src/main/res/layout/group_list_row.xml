@@ -37,7 +37,7 @@
                 android:gravity="center_vertical"
                 android:text="TextView"
                 android:textAlignment="center"
-                tools:text="999/999" />
+                tools:text="98/99" />
 
             <TextView
                 android:id="@+id/budget"
@@ -47,7 +47,7 @@
                 android:gravity="center_vertical"
                 android:text="TextView"
                 android:textAlignment="center"
-                tools:text="Over 9000 PLN" />
+                tools:text="9000 PLN" />
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -69,7 +69,7 @@
                     tools:text="Kampus Morasko" />
 
                 <TextView
-                    android:id="@+id/data"
+                    android:id="@+id/date"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="10"

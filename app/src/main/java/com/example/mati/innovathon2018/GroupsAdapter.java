@@ -16,12 +16,11 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.MyViewHold
     private List<Group> groupList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView actualQuantity, maxQuantity, budget, location, date;
+        public TextView quantity, budget, location, date;
 
         public MyViewHolder(View view) {
             super(view);
-            actualQuantity = (TextView) view.findViewById(R.id.actualQuantity);
-            maxQuantity = (TextView) view.findViewById(R.id.maxQuantity);
+            quantity = (TextView) view.findViewById(R.id.quantity);
             budget = (TextView) view.findViewById(R.id.budget);
             location = (TextView) view.findViewById(R.id.location);
             date = (TextView) view.findViewById(R.id.date);
@@ -45,8 +44,7 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.MyViewHold
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         Group group = groupList.get(position);
-        holder.actualQuantity.setText(group.getActualQuantity());
-        holder.maxQuantity.setText(group.getMaxQuantity());
+        holder.quantity.setText(group.getActualQuantity() + "/" + group.getMaxQuantity());
         holder.budget.setText(group.getBudget());
         holder.location.setText(group.getLocation());
         holder.date.setText(group.getDate().toString());
