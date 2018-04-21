@@ -23,8 +23,8 @@ import java.util.Date;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    RecyclerView recyclerView = findViewById(R.id.rv); //
-    ArrayList<GroupModel> groupsList; //
+    RecyclerView recyclerView;
+    ArrayList<GroupModel> groupsList = new ArrayList<GroupModel>(); //
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-
+        recyclerView = findViewById(R.id.rv);
         groupsList.add(new GroupModel(4,5,50, new Date(2018,5,20,10,20),"Morasko"));
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);

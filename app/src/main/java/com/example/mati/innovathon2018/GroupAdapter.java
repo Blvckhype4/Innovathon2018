@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class GroupAdapter extends RecyclerView.Adapter<GroupAdapter.ViewHolder> {
 
     private Context gContext;
-    private ArrayList<GroupModel> gList;
+    private ArrayList<GroupModel> gList = new ArrayList<>();
 
     GroupAdapter(Context context, ArrayList<GroupModel> list)
     {
