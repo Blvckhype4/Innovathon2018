@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.support.v7.widget.Toolbar;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity
 
         mAvatar = (ImageView) headerView.findViewById(R.id.avatar);
         Uri uri = Uri.parse(mUser.getPhotoUrl().toString());
-        Picasso.with(MainActivity.this).load(uri).resize(200,200).into(mAvatar);
+       // Picasso.with(this).load(uri).resize(200,200).into(mAvatar);
     }
 
     @Override

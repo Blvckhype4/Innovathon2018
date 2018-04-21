@@ -23,6 +23,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import android.support.v7.widget.Toolbar;
 
 public class RegisterForm extends AppCompatActivity {
 
@@ -55,7 +56,7 @@ public class RegisterForm extends AppCompatActivity {
         mEmail.setKeyListener(null);
 
         ArrayAdapter adapter1 = ArrayAdapter.createFromResource(getApplicationContext(),
-                R.array.spinnerValues, android.R.layout.simple_spinner_item);
+                R.array.universitySpinner, android.R.layout.simple_spinner_item);
         mUniversity.setAdapter(adapter1);
         mUniversity.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
