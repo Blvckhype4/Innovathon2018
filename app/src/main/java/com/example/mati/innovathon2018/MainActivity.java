@@ -3,6 +3,8 @@ package com.example.mati.innovathon2018;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,8 +15,16 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.mati.innovathon2018.models.GroupModel;
+
+import java.util.ArrayList;
+import java.util.Date;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    RecyclerView recyclerView = findViewById(R.id.rv); //
+    ArrayList<GroupModel> groupsList; //
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +50,16 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+        groupsList.add(new GroupModel(4,5,50, new Date(2018,5,20,10,20),"Morasko"));
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        RecyclerView.LayoutManager rvLayoutManager = layoutManager;
+
+        recyclerView.setLayoutManager(rvLayoutManager);
+        GroupAdapter adapter = new GroupAdapter(this,groupsList);
+        recyclerView.setAdapter(adapter);
     }
 
     @Override
