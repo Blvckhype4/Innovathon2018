@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:orientation="horizontal"
-    android:layout_height="match_parent"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp">
-    <com.example.mati.innovathon2018.views.UserView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_gravity="center_vertical"
         android:layout_marginBottom="15dp"
         android:layout_marginLeft="10dp"
-        android:layout_gravity="center_vertical"
-        app:cardElevation="1dp"
-        app:contentPadding="15dp">
+        android:layout_marginTop="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,27 +18,73 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <android.support.v7.widget.AppCompatTextView
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    tools:text="Jan" />
+
+                <TextView
+                    android:id="@+id/userSurname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    tools:text="Kowalski" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    tools:layout_width="wrap_content">
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Dodaj do grupy" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Stwórz nową grupę" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:id="@+id/text_timeline_title"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textAlignment="center"
-                tools:text="Order Successfully Completed"/>
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-            <android.support.v7.widget.AppCompatTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/text_timeline_date"
-                android:textSize="12sp"
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    tools:text="Informatyka" />
 
-                tools:text="24 JAN"/>
-
-
+            </LinearLayout>
         </LinearLayout>
 
     </android.support.v7.widget.CardView>
 
-</LinearLayout>
